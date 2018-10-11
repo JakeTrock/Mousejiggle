@@ -1,0 +1,3 @@
+# Mousejiggle
+Ultra-light program keeps your computer awake while you're gone
+mac support coming soon...
