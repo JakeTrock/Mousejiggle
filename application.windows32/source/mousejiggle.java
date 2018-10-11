@@ -20,9 +20,21 @@ public class mousejiggle extends PApplet {
 
 
 Robot r;
-public void setup(){try{r = new Robot();}catch (AWTException e){}text("alt+f4 to exit",0,0);}
-public void draw(){r.mouseMove(PApplet.parseInt(random(0, 10)), PApplet.parseInt(random(0, 10)));}
-  public void settings() { size(200, 200); }
+public void setup() {
+  
+  try {
+    r = new Robot();
+  }
+  catch (AWTException e) {
+  }
+  background(255);
+  text("alt+f4 to exit", 100, 100);
+}
+public void draw() {
+  r.mouseMove(PApplet.parseInt(random(0, 10)), PApplet.parseInt(random(0, 10)));
+}
+
+  public void settings() {  size(200, 200); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "mousejiggle" };
     if (passedArgs != null) {
